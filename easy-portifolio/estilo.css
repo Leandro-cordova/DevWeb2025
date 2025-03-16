@@ -1,0 +1,133 @@
+body
+{
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+header img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #008000;
+}
+
+.center
+{
+    text-align: center;
+}
+
+h1
+{
+    color: #008000;
+}
+
+footer img
+{
+    width: 40px;
+    height: 40px;
+}
+
+footer
+{
+    display: flex;
+    justify-content: center;
+}
+
+footer a 
+{
+    margin: 20px;
+    text-align: center;
+}
+
+footer p
+{
+    margin-top: 2px;
+}
+
+.conteiner
+{
+    padding: 0px 50px;
+}
+
+nav a:hover
+{
+    color: #008000;
+}
+
+section
+{
+    margin: 40px 0px;
+}
+
+#contact
+{
+    display: flex;
+    justify-content: center;
+}
+
+form div
+{
+    margin: 20px 0px;
+}
+
+form label
+{
+    font-size: 15px;
+}
+
+form p
+{
+    font-size: 10px;
+}
+
+input
+{
+    width: 800px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+button
+{
+    background-color: #008000;
+    color: white;
+    border: none;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+button:hover
+{
+    background-color: #005300;
+}
+
+textarea
+{
+    width: 800px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+}

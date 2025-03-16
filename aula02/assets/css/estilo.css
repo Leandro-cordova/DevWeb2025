@@ -1,0 +1,49 @@
+body
+{
+    background-color: #e4e4e4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 900px;
+    margin: auto;   
+}
+
+h1
+{
+    font-size: 40px;
+    float: right;
+}
+
+img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+h2, h3
+{
+    color: #0000ff;
+}
+
+article
+{
+    border: 1px dotted black;
+    border-radius: 15px;
+    padding-inline: 50px;
+    margin: 10px;
+}
+
+p
+{
+    text-align: justify;
+}
+
+footer
+{
+    text-align: center;
+}
+
+a
+{
+    color: #0000ff;
+}
