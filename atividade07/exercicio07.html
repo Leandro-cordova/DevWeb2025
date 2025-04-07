@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio07</title>
+
+    <style>
+        button
+        {
+            width: 70px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="mensagem" type="text">
+    <button id="btn" value="escrever">texto</button>
+    <p id="msg"></p>
+
+    <script>
+        let texto = document.querySelector("#msg");
+        
+        let input = document.querySelector("#mensagem");
+
+        let botao = document.querySelector("#btn");
+        botao.addEventListener("click", escrever);
+        
+        function escrever()
+        {
+            texto.innerText = input.value;
+        }
+    </script>
+</body>
+
+</html>

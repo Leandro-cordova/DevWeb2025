@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 01</title>
+</head>
+
+<body>
+    <h1 id="titulo1">Iniciando com DOM!</h1>
+    <p class="parah">Aqui vai o resultado</p>    
+    <div id="msg">
+        Uma mensagem
+    </div>
+    <hr>
+
+    <script>
+        // Acessando informações do documento
+        document.write(`Olá mundo!<br>`);
+        document.write(window.document.charset + "<br>");
+        document.write(window.navigator.appName + "<br>");
+        document.write(window.document.URL + "<br>");
+
+        // Acessando o HTML
+        document.getElementById("titulo1").innerText = "Mudei o título!";
+        document.getElementById("titulo1").style.color = "blue"; 
+
+        document.querySelector("p").style.color = "red"; 
+        document.querySelector(".parah").style.background = "yellow"; 
+        document.querySelector("#msg").innerText = "Nova mensagem"; 
+
+        // Criar novos elementos
+        let novoParagrafo = document.createElement("p");
+        novoParagrafo.innerText = "Este é um novo parágrafo";
+        document.body.appendChild(novoParagrafo);
+
+        // Remover elementos existentes
+        let elemento = document. getElementById("titulo1");
+        elemento.remove();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio06</title>
+
+    <style>
+        button
+        {
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn" value="mudarCor">COR</button>
+
+    <script>
+        let body = document.querySelector("body");
+        let botao = document.querySelector("#btn");
+        botao.addEventListener("click", mudarCor);
+
+        function mudarCor()
+        {
+            body.style.background = "blue";
+        }
+    </script>
+</body>
+
+</html>

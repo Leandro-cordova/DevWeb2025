@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio10</title>
+</head>
+
+<body>
+    <h3>Nome:</h3>
+    <input id="nome" type="text">
+
+    <h3>Email:</h3>
+    <input id="email" type="email">
+
+    <h3>Mensagem:</h3>
+    <input id="msg" type="text">
+
+    <button id="btn" value="escrever">ENVIAR</button>
+    <p id="dados"></p>
+
+    <script>
+        let texto = document.querySelector("#dados");
+        
+        let textoNome = document.querySelector("#nome");
+        let textoEmail = document.querySelector("#email");
+        let textoMsg = document.querySelector("#msg");
+
+        let botao = document.querySelector("#btn"); 
+        botao.addEventListener("click", escrever);
+        
+        function escrever()
+        {
+            texto.innerHTML = `${textoNome.value} <br> ${textoEmail.value} <br> ${textoMsg.value}`;
+        }
+    </script>
+</body>
+
+</html>

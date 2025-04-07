@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio08</title>
+
+    <style>
+        .bt
+        {
+            width: 70px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btMenos" value="menos" class="bt">-</button>
+    <p id="nmr">10</p>
+    <button id="btMais" value="mais" class="bt">+</button>
+
+    <script>
+        let numero = document.querySelector("#nmr");
+
+        let botaoMenos = document.querySelector("#btMenos");
+        botaoMenos.addEventListener("click", menos);
+
+        let botaoMais = document.querySelector("#btMais");
+        botaoMais.addEventListener("click", mais);
+        
+        function menos()
+        {
+            numero.innerText = Number(numero.innerText) - 1;        }
+        
+        function mais()
+        {
+            numero.innerText = Number(numero.innerText) + 1;
+        }
+    </script>
+</body>
+
+</html>
