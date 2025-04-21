@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 - Array</title>
+</head>
+
+<body>
+    <h1>Array</h1>
+
+    <script>
+        // variaveis simples
+        let fruta1 = "morango";
+        let fruta2 = "banana";
+        let fruta3 = "uva";
+        let fruta4 = "melancia";
+        alert(fruta2);
+
+        // ARRAY
+        let frutas = ['morango', 'banana', 'uva', 'melancia']; // 0, 1, 2, 3
+
+        for (let i = 0; i < 5; i++) 
+        {
+            document.write(frutas[i]);
+            document.write("<br>");
+        }
+        document.write("<br>");
+        
+        // ADICIONAR um item na lista
+        frutas.push('maçã') // INCLUI NO FINAL
+        
+        for (let i = 0; i < 5; i++) 
+        {
+            document.write(frutas[i]);
+            document.write("<br>");
+        }
+        document.write("<br>");
+
+        // REMOVER um item da lista
+        frutas.pop(); // REMOVE NO FINAL
+
+        // REMOVER um item específico
+        alert(frutas[1]); // banana
+        frutas.splice(1, 1); // 1° valor = Indice | 2° valor = quantos itens
+        alert(frutas[1]); // uva
+        alert(frutas[2]); // melancia
+
+        for (let i = 0; i < 5; i++) 
+        {
+            document.write(frutas[i]);
+            document.write("<br>");
+        }
+    </script>
+</body>
+
+</html>

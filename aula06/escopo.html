@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 - Escopo</title>
+</head>
+
+<body>
+    <h1>Escopo</h1>
+
+    <script>
+        // ESCOPO VARIAVEIS
+        // GLOBAL ou LOCAL
+
+        let nome = `Maria`; // GLobal
+
+        function mostrarNome()
+        {
+            let nome = `Joao`; // Local
+            alert(nome);
+        }
+        mostrarNome(); // Joao
+        alert(nome); // Maria
+
+
+        
+    </script>
+</body>
+
+</html>
